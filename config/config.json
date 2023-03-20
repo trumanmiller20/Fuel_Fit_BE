@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "trumanmiller",
+    "password": "1234",
+    "database": "fuelfit_capstone",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "trumanmiller",
+    "password": "1234",
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "trumanmiller",
+    "password": "1234",
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
