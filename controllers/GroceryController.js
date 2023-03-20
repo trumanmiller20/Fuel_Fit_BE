@@ -1,6 +1,6 @@
 const { Grocery } = require('../models')
 
-const AddGroceryItem = async (req, res) => {
+const AddUserGroceryItem = async (req, res) => {
   try {
     let userId = parseInt(req.params.user_id)
     let itemBody = {
@@ -25,7 +25,7 @@ const GetGroceriesByUser = async (req, res) => {
   }
 }
 
-const DeleteGroceryItem = async (req, res) => {
+const DeleteUserGroceryItem = async (req, res) => {
   try {
     let itemId = parseInt(req.params.item_id)
     let userId = parseInt(req.params.user_id)
@@ -37,7 +37,7 @@ const DeleteGroceryItem = async (req, res) => {
 }
 
 module.exports = {
-  AddGroceryItem,
+  AddUserGroceryItem,
   GetGroceriesByUser,
-  DeleteGroceryItem
+  DeleteUserGroceryItem
 }

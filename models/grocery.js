@@ -8,7 +8,11 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      Grocery.belongsTo(models.User, {
+        foreignKey: 'user_id',
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE'
+      })
     }
   }
   Grocery.init(
@@ -18,7 +22,15 @@ module.exports = (sequelize, DataTypes) => {
       calories: DataTypes.INTEGER,
       fat: DataTypes.INTEGER,
       protein: DataTypes.INTEGER,
-      carbs: DataTypes.INTEGER
+      carbs: DataTypes.INTEGER,
+      user_id: {
+        type: DataTypes.INTEGER,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'users',
+          key: 'id'
+        }
+      }
     },
     {
       sequelize,

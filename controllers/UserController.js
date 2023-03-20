@@ -44,7 +44,7 @@ const RegisterUser = async (req, res) => {
       age,
       activity
     })
-    res.send(patient)
+    res.send(user)
   } catch (error) {
     throw error
   }

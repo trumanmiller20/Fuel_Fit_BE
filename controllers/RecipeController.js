@@ -1,6 +1,6 @@
 const { Recipe } = require('../models')
 
-const AddRecipe = async (req, res) => {
+const AddUserRecipe = async (req, res) => {
   try {
     let userId = parseInt(req.params.user_id)
     let recipeBody = {
@@ -25,19 +25,19 @@ const GetRecipesByUser = async (req, res) => {
   }
 }
 
-const DeleteRecipe = async (req, res) => {
+const DeleteUserRecipe = async (req, res) => {
   try {
     let recipeId = parseInt(req.params.recipe_id)
     let userId = parseInt(req.params.user_id)
     await Recipe.destroy({ where: [{ id: recipeId }, { user_id: userId }] })
-    res.send({ message: `Deleted recipe with ID number of ${itemId}` })
+    res.send({ message: `Deleted recipe with ID number of ${recipeId}` })
   } catch (error) {
     throw error
   }
 }
 
 module.exports = {
-  AddRecipe,
+  AddUserRecipe,
   GetRecipesByUser,
-  DeleteRecipe
+  DeleteUserRecipe
 }
