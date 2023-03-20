@@ -13,24 +13,12 @@ module.exports = (sequelize, DataTypes) => {
   }
   Grocery.init(
     {
-      name: {
-        type: DataTypes.STRING
-      },
-      image: {
-        type: DataTypes.STRING
-      },
-      calories: {
-        type: DataTypes.INTEGER
-      },
-      fat: {
-        type: DataTypes.INTEGER
-      },
-      protein: {
-        type: DataTypes.INTEGER
-      },
-      carbs: {
-        type: DataTypes.INTEGER
-      }
+      name: DataTypes.STRING,
+      image: DataTypes.STRING,
+      calories: DataTypes.INTEGER,
+      fat: DataTypes.INTEGER,
+      protein: DataTypes.INTEGER,
+      carbs: DataTypes.INTEGER
     },
     {
       sequelize,

@@ -13,30 +13,14 @@ module.exports = (sequelize, DataTypes) => {
   }
   Recipe.init(
     {
-      title: {
-        type: DataTypes.STRING
-      },
-      image: {
-        type: DataTypes.STRING
-      },
-      ingredients: {
-        type: DataTypes.ARRAY(DataTypes.STRING)
-      },
-      instructions: {
-        type: DataTypes.TEXT('long')
-      },
-      calories: {
-        type: DataTypes.INTEGER
-      },
-      fat: {
-        type: DataTypes.INTEGER
-      },
-      protein: {
-        type: DataTypes.INTEGER
-      },
-      carb: {
-        type: DataTypes.INTEGER
-      }
+      title: DataTypes.STRING,
+      image: DataTypes.STRING,
+      ingredients: DataTypes.ARRAY(DataTypes.STRING),
+      instructions: DataTypes.TEXT('long'),
+      calories: DataTypes.INTEGER,
+      fat: DataTypes.INTEGER,
+      protein: DataTypes.INTEGER,
+      carbs: DataTypes.INTEGER
     },
     {
       sequelize,
