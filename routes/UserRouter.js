@@ -9,7 +9,7 @@ Router.get(
   middleware.verifyToken,
   controller.CheckSession
 )
-Router.get('/details/:user_id', controller.GetUserDetails)
+Router.get('/details', controller.GetUserDetails)
 Router.post('/register', controller.RegisterUser)
 Router.post('/login', controller.LoginUser)
 Router.put(

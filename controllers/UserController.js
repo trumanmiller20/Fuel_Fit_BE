@@ -1,5 +1,6 @@
 const { User } = require('../models')
 const middleware = require('../middleware')
+const { Op } = require('sequelize')
 
 const GetAllUsers = async (req, res) => {
   try {
@@ -12,7 +13,11 @@ const GetAllUsers = async (req, res) => {
 
 const GetUserDetails = async (req, res) => {
   try {
-    const userDetails = await User.findByPk(req.params.user_id)
+    const { username } = req.body
+    const userDetails = await User.findOne({
+      where: { username: username },
+      raw: true
+    })
     res.send(userDetails)
   } catch (error) {
     throw error
