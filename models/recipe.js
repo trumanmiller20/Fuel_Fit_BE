@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
       title: DataTypes.STRING,
       image: DataTypes.STRING,
       ingredients: DataTypes.ARRAY(DataTypes.STRING),
-      instructions: DataTypes.TEXT('long'),
+      instructions: DataTypes.ARRAY(DataTypes.STRING),
       calories: DataTypes.INTEGER,
       fat: DataTypes.INTEGER,
       protein: DataTypes.INTEGER,
