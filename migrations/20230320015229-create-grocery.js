@@ -12,20 +12,11 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
+      api_id: {
+        type: Sequelize.INTEGER
+      },
       image: {
         type: Sequelize.STRING
-      },
-      calories: {
-        type: Sequelize.INTEGER
-      },
-      fat: {
-        type: Sequelize.INTEGER
-      },
-      protein: {
-        type: Sequelize.INTEGER
-      },
-      carbs: {
-        type: Sequelize.INTEGER
       },
       user_id: {
         type: Sequelize.INTEGER,

@@ -18,6 +18,7 @@ module.exports = (sequelize, DataTypes) => {
   Recipe.init(
     {
       title: DataTypes.STRING,
+      api_id: DataTypes.INTEGER,
       image: DataTypes.STRING,
       ingredients: DataTypes.ARRAY(DataTypes.STRING),
       instructions: DataTypes.ARRAY(DataTypes.STRING),

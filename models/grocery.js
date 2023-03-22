@@ -18,11 +18,8 @@ module.exports = (sequelize, DataTypes) => {
   Grocery.init(
     {
       name: DataTypes.STRING,
+      api_id: DataTypes.INTEGER,
       image: DataTypes.STRING,
-      calories: DataTypes.INTEGER,
-      fat: DataTypes.INTEGER,
-      protein: DataTypes.INTEGER,
-      carbs: DataTypes.INTEGER,
       user_id: {
         type: DataTypes.INTEGER,
         onDelete: 'CASCADE',

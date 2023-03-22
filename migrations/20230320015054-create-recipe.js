@@ -12,6 +12,9 @@ module.exports = {
       title: {
         type: Sequelize.STRING
       },
+      api_id: {
+        type: Sequelize.INTEGER
+      },
       image: {
         type: Sequelize.STRING
       },
@@ -19,7 +22,7 @@ module.exports = {
         type: Sequelize.ARRAY(Sequelize.STRING)
       },
       instructions: {
-        type: Sequelize.TEXT
+        type: Sequelize.ARRAY(Sequelize.STRING)
       },
       calories: {
         type: Sequelize.INTEGER
