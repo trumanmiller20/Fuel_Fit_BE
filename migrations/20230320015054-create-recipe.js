@@ -22,7 +22,7 @@ module.exports = {
         type: Sequelize.ARRAY(Sequelize.STRING)
       },
       instructions: {
-        type: Sequelize.ARRAY(Sequelize.STRING)
+        type: Sequelize.ARRAY(Sequelize.TEXT)
       },
       calories: {
         type: Sequelize.INTEGER

@@ -50,7 +50,8 @@ module.exports = (sequelize, DataTypes) => {
       height: DataTypes.INTEGER,
       weight: DataTypes.INTEGER,
       age: DataTypes.INTEGER,
-      activity: DataTypes.INTEGER
+      activity: DataTypes.INTEGER,
+      gender: DataTypes.STRING
     },
     {
       sequelize,

@@ -21,7 +21,7 @@ module.exports = (sequelize, DataTypes) => {
       api_id: DataTypes.INTEGER,
       image: DataTypes.STRING,
       ingredients: DataTypes.ARRAY(DataTypes.STRING),
-      instructions: DataTypes.ARRAY(DataTypes.STRING),
+      instructions: DataTypes.ARRAY(DataTypes.TEXT),
       calories: DataTypes.INTEGER,
       fat: DataTypes.INTEGER,
       protein: DataTypes.INTEGER,
