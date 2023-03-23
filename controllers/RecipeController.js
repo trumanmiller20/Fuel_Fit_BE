@@ -25,6 +25,19 @@ const GetRecipesByUser = async (req, res) => {
   }
 }
 
+const GetUserRecipe = async (req, res) => {
+  try {
+    let recipeId = parseInt(req.params.recipe_id)
+    let userId = parseInt(req.params.user_id)
+    const userRecipe = await Recipe.findOne({
+      where: [{ id: recipeId }, { user_id: userId }]
+    })
+    res.send(userRecipe)
+  } catch (error) {
+    throw error
+  }
+}
+
 const DeleteUserRecipe = async (req, res) => {
   try {
     let recipeId = parseInt(req.params.recipe_id)
@@ -39,5 +52,6 @@ const DeleteUserRecipe = async (req, res) => {
 module.exports = {
   AddUserRecipe,
   GetRecipesByUser,
-  DeleteUserRecipe
+  DeleteUserRecipe,
+  GetUserRecipe
 }
