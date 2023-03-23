@@ -9,14 +9,10 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       User.hasMany(models.Grocery, {
-        foreignKey: 'user_id',
-        onDelete: 'CASCADE',
-        onUpdate: 'CASCADE'
+        foreignKey: 'user_id'
       }),
         User.hasMany(models.Recipe, {
-          foreignKey: 'user_id',
-          onDelete: 'CASCADE',
-          onUpdate: 'CASCADE'
+          foreignKey: 'user_id'
         })
     }
   }

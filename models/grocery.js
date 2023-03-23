@@ -11,7 +11,8 @@ module.exports = (sequelize, DataTypes) => {
       Grocery.belongsTo(models.User, {
         foreignKey: 'user_id',
         onDelete: 'CASCADE',
-        onUpdate: 'CASCADE'
+        onUpdate: 'CASCADE',
+        hooks: true
       })
     }
   }
