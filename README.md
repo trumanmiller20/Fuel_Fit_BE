@@ -12,7 +12,7 @@
 
 [Front End Repository](https://github.com/trumanmiller20/Fuel_Fit_FE)
 
-[Entity Relationship Diagram](https://drive.google.com/file/d/1dc2QBlzhGx3we0ETleQ6cqfRoTofMX_z/view?usp=sharing)
+[Entity Relationship Diagram](https://app.diagrams.net/#G10JuUr0HBO2_VmeQ4AI-Wd8n1erfzEd3M)
 
 [Component Hierarchy Diagram](https://app.diagrams.net/#G1gjkv6LMdYc1FffNoP9l3tso_d7Eon8MY)
 
