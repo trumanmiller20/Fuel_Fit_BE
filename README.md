@@ -14,7 +14,7 @@
 
 [Entity Relationship Diagram](https://drive.google.com/file/d/1dc2QBlzhGx3we0ETleQ6cqfRoTofMX_z/view?usp=sharing)
 
-[Component Hierarchy Diagram](https://drive.google.com/file/d/1FLH9COKGH6CTPRAdueu4HAo-XghX1TdP/view?usp=sharing)
+[Component Hierarchy Diagram](https://app.diagrams.net/#G1gjkv6LMdYc1FffNoP9l3tso_d7Eon8MY)
 
 ---
 
